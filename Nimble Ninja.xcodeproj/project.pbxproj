@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		05CCCD8F1AED59EE00B4EDAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCD8E1AED59EE00B4EDAD /* AppDelegate.swift */; };
-		05CCCD911AED59EE00B4EDAD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 05CCCD901AED59EE00B4EDAD /* GameScene.sks */; };
 		05CCCD931AED59EE00B4EDAD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCD921AED59EE00B4EDAD /* GameScene.swift */; };
 		05CCCD951AED59EE00B4EDAD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCD941AED59EE00B4EDAD /* GameViewController.swift */; };
 		05CCCD981AED59EE00B4EDAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CCCD961AED59EE00B4EDAD /* Main.storyboard */; };
 		05CCCD9A1AED59EE00B4EDAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CCCD991AED59EE00B4EDAD /* Images.xcassets */; };
 		05CCCD9D1AED59EE00B4EDAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05CCCD9B1AED59EE00B4EDAD /* LaunchScreen.xib */; };
 		05CCCDA91AED59EE00B4EDAD /* Nimble_NinjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCDA81AED59EE00B4EDAD /* Nimble_NinjaTests.swift */; };
+		05CCCDB31AED69B000B4EDAD /* MovingGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCDB21AED69AF00B4EDAD /* MovingGround.swift */; };
+		05CCCDB51AED7BDA00B4EDAD /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCDB41AED7BDA00B4EDAD /* Hero.swift */; };
+		05CCCDB71AED915C00B4EDAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCDB61AED915B00B4EDAD /* Constants.swift */; };
+		05CCCDB91AED973300B4EDAD /* WallGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCDB81AED973300B4EDAD /* WallGenerator.swift */; };
+		05CCCDBB1AED974200B4EDAD /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCCDBA1AED974200B4EDAD /* Wall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,6 @@
 		05CCCD891AED59EE00B4EDAD /* Nimble Ninja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nimble Ninja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CCCD8D1AED59EE00B4EDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05CCCD8E1AED59EE00B4EDAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05CCCD901AED59EE00B4EDAD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		05CCCD921AED59EE00B4EDAD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		05CCCD941AED59EE00B4EDAD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		05CCCD971AED59EE00B4EDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +43,11 @@
 		05CCCDA21AED59EE00B4EDAD /* Nimble NinjaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nimble NinjaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CCCDA71AED59EE00B4EDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05CCCDA81AED59EE00B4EDAD /* Nimble_NinjaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nimble_NinjaTests.swift; sourceTree = "<group>"; };
+		05CCCDB21AED69AF00B4EDAD /* MovingGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingGround.swift; sourceTree = "<group>"; };
+		05CCCDB41AED7BDA00B4EDAD /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		05CCCDB61AED915B00B4EDAD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		05CCCDB81AED973300B4EDAD /* WallGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallGenerator.swift; sourceTree = "<group>"; };
+		05CCCDBA1AED974200B4EDAD /* Wall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +90,12 @@
 			isa = PBXGroup;
 			children = (
 				05CCCD8E1AED59EE00B4EDAD /* AppDelegate.swift */,
-				05CCCD901AED59EE00B4EDAD /* GameScene.sks */,
 				05CCCD921AED59EE00B4EDAD /* GameScene.swift */,
+				05CCCDB21AED69AF00B4EDAD /* MovingGround.swift */,
+				05CCCDB41AED7BDA00B4EDAD /* Hero.swift */,
+				05CCCDB81AED973300B4EDAD /* WallGenerator.swift */,
+				05CCCDBA1AED974200B4EDAD /* Wall.swift */,
+				05CCCDB61AED915B00B4EDAD /* Constants.swift */,
 				05CCCD941AED59EE00B4EDAD /* GameViewController.swift */,
 				05CCCD961AED59EE00B4EDAD /* Main.storyboard */,
 				05CCCD991AED59EE00B4EDAD /* Images.xcassets */,
@@ -200,7 +212,6 @@
 			files = (
 				05CCCD9D1AED59EE00B4EDAD /* LaunchScreen.xib in Resources */,
 				05CCCD9A1AED59EE00B4EDAD /* Images.xcassets in Resources */,
-				05CCCD911AED59EE00B4EDAD /* GameScene.sks in Resources */,
 				05CCCD981AED59EE00B4EDAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CCCDB51AED7BDA00B4EDAD /* Hero.swift in Sources */,
+				05CCCDB31AED69B000B4EDAD /* MovingGround.swift in Sources */,
 				05CCCD931AED59EE00B4EDAD /* GameScene.swift in Sources */,
 				05CCCD951AED59EE00B4EDAD /* GameViewController.swift in Sources */,
 				05CCCD8F1AED59EE00B4EDAD /* AppDelegate.swift in Sources */,
+				05CCCDBB1AED974200B4EDAD /* Wall.swift in Sources */,
+				05CCCDB91AED973300B4EDAD /* WallGenerator.swift in Sources */,
+				05CCCDB71AED915C00B4EDAD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
